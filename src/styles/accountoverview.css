@@ -1,0 +1,53 @@
+.account-overview {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    flex: 0.7;
+  }
+  
+  .account-overview h2 {
+    text-align: start;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: orange;
+  }
+  
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .overview-item {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    gap:10px;
+    align-items:center
+  }
+  
+  .overview-item strong {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .overview-item span {
+    color: #222;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  @media(max-width:768px){
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr ; 
+      gap: 10px;
+      width: 100%;
+    }
+  }
+  

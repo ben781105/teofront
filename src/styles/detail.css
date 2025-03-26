@@ -1,0 +1,145 @@
+.cake-detail-container {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.cake-detail {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-left: 10rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+}
+.cake-image{
+    width: 25rem;
+    height: 28rem;
+}
+.cake-image img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cake-info h1 {
+    font-size: 2rem;
+    
+}
+
+.cake-price {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #d35400;
+    font-family: monospace;
+}
+
+.cake-description {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 80%;
+    margin-top: 10px;
+}
+.cake-info button{
+    width: 160px;
+    height: 45px;
+    font-size: 17px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    background-color: #fff;
+    transition: ease 0.35s all;
+}
+.cake-info button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
+/* Similar Cakes Section */
+.similar-cakes h2 {
+    margin-bottom: 20px;
+    margin-left: 2rem;
+    font-family: playball;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+.similar-cakes-grid {
+    display: flex;
+    gap:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 3rem;
+}
+
+.similar-cake-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+
+}
+.similar-cake-item p{
+    margin-bottom: 10px;
+}
+
+.similar-cake-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.similar-cake-item h3 {
+    margin: 5px 0;
+}
+
+.similar-cake-item p {
+   margin-bottom: 10px;
+    font-weight: bold;
+}
+@media (max-width :768px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .cake-detail-container {
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+ .cake-detail{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.5rem;
+    flex-wrap: wrap;
+    padding: 20px;
+ }
+ .cake-image{
+    width:100%;
+    height: 80%;
+ }
+ .cake-image img{
+    width:100%;
+    object-fit: cover;
+    height: 100%;
+ }
+ .cake-description{
+  max-width: 100%;
+ }
+
+}
+@media (max-width:450px){
+    .similar-cakes-grid{
+        flex-direction: column;
+        margin: 0;
+
+    }
+}
+@media (max-width :1066px){
+  .cake-detail{
+    padding: 20px;
+    margin-top: 6.5rem;
+  }
+}

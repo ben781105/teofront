@@ -1,0 +1,55 @@
+.profile-card {
+    width: 200px;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.3;
+    margin-top: 13px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid orange;
+  }
+  
+  .profile-card h2 {
+    margin: 15px 0 5px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .profile-card p {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .edit-button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    width:120px;
+    background:orange;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .edit-button:hover {
+    background: #ff5722;
+  }
+  @media(max-width:768px){
+    .profile-card{
+      align-self: center;
+      width:250px;
+    }
+  }

@@ -1,0 +1,107 @@
+/* Skeleton for Detail Page */
+.skeleton-detail-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+}
+
+
+.skeleton-detail {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 6rem;
+}
+
+/* Skeleton Image */
+.skeleton-cake-image {
+    width: 400px;
+    height: 450px;
+    background: #e0e0e0;
+    animation: fadeAnimation 1.5s infinite ease-in-out;
+}
+
+/* Skeleton Cake Info */
+.skeleton-cake-info {
+    flex: 1;
+    transform: translatey(-40px);
+}
+
+.skeleton-title {
+    width: 40%;
+    height: 30px;
+    background: #e0e0e0;
+    margin-bottom: 30px;
+    animation: fadeAnimation 1.5s infinite ease-in-out;
+}
+
+.skeleton-price {
+    width: 20%;
+    height: 20px;
+    background: #e0e0e0;
+    margin-bottom: 10px;
+    animation: fadeAnimation 1.5s infinite ease-in-out;
+}
+
+.skeleton-description {
+    width: 70%;
+    height: 15px;
+    background: #e0e0e0;
+    margin-bottom: 10px;
+    animation: fadeAnimation 1.5s infinite ease-in-out;
+}
+
+.skeleton-button {
+    width: 20%;
+    height: 45px;
+    background: #e0e0e0;
+    margin-top: 80px;
+    animation: fadeAnimation 1.5s infinite ease-in-out;
+}
+
+
+
+/* Opacity Animation */
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .skeleton-detail {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .skeleton-cake-image {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .skeleton-detail {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .skeleton-cake-image {
+        width: 100%;
+        height: 300px;
+    }
+}

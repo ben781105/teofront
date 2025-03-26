@@ -1,0 +1,39 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+.checkout-page{
+    width:100%;
+    min-height: 100vh;
+    padding-top: 4rem;
+  
+}
+
+
+:root{
+    --secondary-color: #f88c91;
+}
+.checkout-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 3rem;
+    padding-left: 4rem;
+    flex:1;
+    gap:80px;
+    margin-top: 4rem;
+    
+}
+.checkout-container{
+    flex:0.6;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:768px){
+    .checkout-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
