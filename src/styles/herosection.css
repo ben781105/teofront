@@ -41,5 +41,10 @@ text-decoration: none;
 .herosection h1{
     text-align: center;
     color: white;
-    font-size: 3.5em;
+    font-size: 3em;
+}
+@media(max-width:768px){
+    .herosection h1{
+        font-size: 2em;
+    }
 }
