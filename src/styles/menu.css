@@ -23,6 +23,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     overflow-x:hidden;
+      font-family: sans-serif;
   }
   .menu .welcome{
     text-align: center;
@@ -44,6 +45,8 @@
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 8px;
+      color:inherit;
+      text-decoration:none;
   }
   .menu-item p{
     font-size: 1rem;
