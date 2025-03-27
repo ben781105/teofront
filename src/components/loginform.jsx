@@ -74,7 +74,6 @@ const Loginform = () => {
       <div className="auth-box">
       {error && <ErrorComponent/>}
          <h1 style={{color:'#ff7f50'}}>{isLogin? "Welcome Back": "Create your account"}</h1>
-        <h2 style={{fontWeight:400}}>{isLogin ? "Login" : "Sign Up"}</h2>
         <form onSubmit={handleSubmit}>
           
             <div className="input-group">
