@@ -1,5 +1,5 @@
 import '../styles/order.css'
-
+import imageUrl from '../imageurl'
 function Order({cartitems,cartTotal,tax}) {
     const total = (Number(cartTotal)+ Number(tax)).toFixed(2)
   return (
@@ -10,7 +10,7 @@ function Order({cartitems,cartTotal,tax}) {
         <div className="order-item-wrapper" key={cartitem.id}>
         <div className="order-item">
             <div className="order-image">
-                <img src={`http://localhost:8000${cartitem.cake.image}`} alt={cartitem.cake.name}/>
+                <img src={`${imageUrl}${cartitem.cake.image}`} alt={cartitem.cake.name}/>
             </div>
             <div className="order-details">
                 <h3>{cartitem.cake.name}</h3>
