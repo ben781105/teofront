@@ -97,4 +97,13 @@
       grid-template-columns: 1fr; 
     }
   }
+@media(max-width:768px){
+    .menu .welcome{
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 400;
+      max-width: 100%;
+      margin:0 auto;
+    }
+  }
   
