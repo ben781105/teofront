@@ -9,6 +9,7 @@
 }
 html{
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 main{
   padding: 0;
@@ -99,6 +100,7 @@ main .heading{
     position: relative;
     margin-top: 10px;
     margin-bottom: 2rem;
+    font-family:sans-serif;
   }
   .payment .heading {
     font-size: 1.2rem;
