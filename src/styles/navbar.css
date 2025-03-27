@@ -12,9 +12,7 @@
   z-index: 100;
   color:#fff;
 }
-li{
-  color:inherit;
-}
+
 :root{
   --secondary-color: #f88c91;
 }
@@ -75,7 +73,7 @@ li{
     display: block;
     
   }
- }
+ 
 
   .nav-links {
     display: none;
@@ -85,7 +83,7 @@ li{
     left: 0;
     gap:10px;
     width: 100%;
-    background: #fff;
+    background: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 15px;
   }
