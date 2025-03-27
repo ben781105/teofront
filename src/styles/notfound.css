@@ -28,4 +28,15 @@
   .back-home:hover {
     background-color: #ff4f4f;
   }
+@media(max-width:768px){
+     .not-found h1 {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+  }
+  
+  .not-found p {
+    font-size: 1rem;
+    color: #555;
+  }
+}
   
