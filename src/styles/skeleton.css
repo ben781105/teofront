@@ -4,17 +4,22 @@
   align-items: center;
   justify-content: center;
   margin-top: 15px;
+   overflow-x: hidden;
 }
 
 .skeleton-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-width: 93%;
+  grid-template-columns: repeat(5, 1fr); 
   gap: 25px;
   justify-content: center;
   margin-top: 20px;
-  width: 100%;
-  padding-left:10px;
+  margin: 0 20px 0 20px;
+  border:10px solid;
+  overflow-x: hidden;
 }
+
 
 .skeleton-card {
   width: 250px;
@@ -76,11 +81,23 @@
   .skeleton-grid {
     grid-template-columns: repeat(2, 1fr); 
     gap: 25px;
+     padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
 @media (max-width: 480px) {
   .skeleton-grid {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    gap: 25px;
+    
+    
   }
 }
+
