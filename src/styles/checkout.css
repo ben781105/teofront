@@ -36,5 +36,8 @@
     .checkout-wrapper{
         display: flex;
         flex-direction: column;
+        padding:20px;
+        margin-top:2rem;
+        gap:30px;
     }
 }
