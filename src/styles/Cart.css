@@ -22,6 +22,7 @@
     padding-right: 3rem;
     padding-left: 4rem;
     flex:1
+    font-family: sans-serif;
 }
 .cartitems-container{
     flex:0.7;
