@@ -2,6 +2,7 @@ import { useState } from 'react';
 import '../styles/cartitem.css';
 import api from '../api';
 import { toast } from 'react-toastify';
+import imageUrl from '../imageurl'
 
 function CartItem({ cartitem, setCartTotal, cartitems, setCartnumber, setCartItems }) {
     const [quantity, setQuantity] = useState(cartitem.quantity);
@@ -73,7 +74,7 @@ function CartItem({ cartitem, setCartTotal, cartitems, setCartnumber, setCartIte
             <div className="cart-item-wrapper">
                 <div className="cart-item">
                     <div className="cart-item-image">
-                        <img src={`http://localhost:8000${cartitem.cake.image}`} alt={cartitem.cake.name} />
+                        <img src={`${imageUrl}${cartitem.cake.image}`} alt={cartitem.cake.name} />
                     </div>
                     <div className="cart-item-details">
                         <h3>{cartitem.cake.name}</h3>
