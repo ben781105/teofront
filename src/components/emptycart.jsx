@@ -6,7 +6,8 @@ function Emptycart() {
     
   return (
     <div className='empty'>
-   <p>Your cart is empty!<br></br>🛒😞</p>
+    <p>Your cart is empty!<br></br>🛒😞</p>
+      
     </div>
   )
 }

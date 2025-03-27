@@ -1,10 +1,14 @@
 import axios from 'axios';
 import {jwtDecode} from 'jwt-decode'
-const API_URL = import.meta.env.VITE_BASE_URL || 'https://127.0.0.1:8000';
 
+const API_URL = import.meta.env.VITE_BASE_URL || 'http://127.0.0.1:8000';
+//const imageUrl = import.meta.env.VITE_BASE_URL || 'http://localhost:8000'
 const api = axios.create({
     baseURL: API_URL,
 });
+
+
+
 
 
 
@@ -25,6 +29,6 @@ api.interceptors.request.use(
     (error) => {
         return Promise.reject(error);
     }
-);
+)
 
 export default api;

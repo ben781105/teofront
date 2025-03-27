@@ -74,7 +74,11 @@ const Detail = ({setCartnumber}) => {
     return (
         <div className="cake-detail-container">
             {loading ? (
+                <>
+                
                 <CakeDetailSkeleton />
+                
+                </>
             ) : (
                 <>
                     {/* Product Main Section */}

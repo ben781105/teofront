@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 30px 15px 40px;
   background: #333;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -10,7 +10,7 @@
   top:0;
   width:100%;
   z-index: 100;
-  color:#fff;
+  color: #fff;
 }
 
 :root{
@@ -18,15 +18,16 @@
 }
 .navbar h2{
   color:#fff;
+  color:#fff;
   font-size: 1.3em;
+  font-family: playball;
   font-family: playball;
 }
 .nav-links {
   display: flex;
   gap: 60px;
   color: #fff;
-  font-size: 1rem;
-  font-family: sans-serif;
+  font-size: 1.2rem;
 }
 .active{
   font-weight: bold;
@@ -74,10 +75,8 @@
     display: block;
     
   }
- .navbar{
-   padding-right:10px;
-   padding-left:40px;
- }
+ 
+  
 
   .nav-links {
     display: none;
@@ -87,6 +86,7 @@
     left: 0;
     gap:10px;
     width: 100%;
+    background: #333;
     background: #333;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding: 15px;
@@ -101,6 +101,7 @@
    display: block;
    cursor: pointer;
    border-bottom: 1px solid;
+   color:#fff;
    color:#fff;
    padding-bottom: 10px;
     font-family: sans-serif;

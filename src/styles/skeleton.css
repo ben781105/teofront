@@ -15,8 +15,8 @@
   gap: 25px;
   justify-content: center;
   margin-top: 20px;
-  margin: 0 20px 0 20px;
-  overflow-x: hidden;
+  width: 100%;
+  padding-left: 10px;
 }
 
 
@@ -46,6 +46,7 @@
 .skeleton-text {
   height: 10px;
   margin-top: 10px;
+  width:90%;
 }
 
 .skeleton-name {
@@ -53,7 +54,9 @@
 }
 
 .skeleton-price {
-  width: 40%;
+  width: 90%;
+  height: 10px;
+  margin-top: 10px;
 }
 
 /* Opacity Animation */
