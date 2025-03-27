@@ -80,7 +80,7 @@ const Detail = ({setCartnumber}) => {
                     {/* Product Main Section */}
                     <div className="cake-detail">
                         <div className="cake-image">
-                            <img src={`${imageUrl}${cakeDetail.image}`} alt={cakeDetail.name} />
+                            <img src={`${imageUrl}${cakeDetail.image}`} alt={cakeDetail.name} loading='lazy'/>
                         </div>
 
                         <div className="cake-info">
@@ -98,7 +98,7 @@ const Detail = ({setCartnumber}) => {
                             {similarCakes.map((cake) => (
                                 <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}>
                                     <div className="similar-cake-item">
-                                        <img src={`${imageUrl}${cake.image}`} alt={cake.name} />
+                                        <img src={`${imageUrl}${cake.image}`} alt={cake.name} loading='lazy'/>
                                         <h3>{cake.name}</h3>
                                         <p>${cake.price}</p>
                                     </div>
