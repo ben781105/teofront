@@ -1,6 +1,7 @@
 import { Navigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import api from '../api';
+import imageUrl from '../imageurl'
 import { Link } from 'react-router-dom';
 import '../styles/detail.css';
 import { useNavigate } from 'react-router-dom';
@@ -79,7 +80,7 @@ const Detail = ({setCartnumber}) => {
                     {/* Product Main Section */}
                     <div className="cake-detail">
                         <div className="cake-image">
-                            <img src={`http://localhost:8000${cakeDetail.image}`} alt={cakeDetail.name} />
+                            <img src={`${imageUrl}${cakeDetail.image}`} alt={cakeDetail.name} />
                         </div>
 
                         <div className="cake-info">
@@ -97,7 +98,7 @@ const Detail = ({setCartnumber}) => {
                             {similarCakes.map((cake) => (
                                 <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}>
                                     <div className="similar-cake-item">
-                                        <img src={`http://localhost:8000${cake.image}`} alt={cake.name} />
+                                        <img src={`${imageUrl}${cake.image}`} alt={cake.name} />
                                         <h3>{cake.name}</h3>
                                         <p>${cake.price}</p>
                                     </div>
