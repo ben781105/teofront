@@ -19,7 +19,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: sans-serif;
+    
 
 }
 :root{
@@ -46,6 +46,6 @@ text-decoration: none;
 }
 @media(max-width:768px){
     .herosection h1{
-        font-size: 2em;
+        font-size: 1.9em;
     }
 }
