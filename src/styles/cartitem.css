@@ -16,6 +16,7 @@
     align-items: center;
     background-color: #FAFAFA;
     padding: 10px;
+      font-family:sans-serif;
   }
   
   .cart-item {
@@ -23,7 +24,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 8px;
-   
+   font-family:sans-serif;
   }
   
   .cart-item-image img {
@@ -93,6 +94,7 @@
     flex-direction: column;
     gap: 10px;
     flex:0.3;
+      font-family:sans-serif;
   }
   
   .cart-summary h2 {
