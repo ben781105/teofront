@@ -16,7 +16,7 @@ function Menu({ cakes, loading, error }) {
         <div className="menu-grid">
           {cakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id}><div className="menu-item" style={{color:'inherit'}}>
-              <div className="menu-image"><img src={`${imageUrl}${cake.image}`} alt={cake.name}/></div>
+              <div className="menu-image"><img src={`${imageUrl}${cake.image}`} alt={cake.name} loading='lazy'/></div>
               <h3 style={{textDecoration:'none',color:'inherit'}}>{cake.name}</h3>
               <p>${(cake.price).toLocaleString()}</p>
               
