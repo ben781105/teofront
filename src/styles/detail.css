@@ -143,3 +143,12 @@
     margin-top: 6.5rem;
   }
 }
+@media(max-width:768px){
+    .cake-description {
+        font-size: 1.1rem;
+        color: #555;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
