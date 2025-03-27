@@ -26,6 +26,7 @@
   gap: 60px;
   color: #fff;
   font-size: 1rem;
+  font-family: sans-serif;
 }
 .active{
   font-weight: bold;
@@ -93,6 +94,7 @@
 
   .nav-links.open {
     display: flex;
+    font-family: sans-serif;
   }
 
   .nav-links li {
@@ -101,5 +103,6 @@
    border-bottom: 1px solid;
    color:#fff;
    padding-bottom: 10px;
+    font-family: sans-serif;
   }
 }
