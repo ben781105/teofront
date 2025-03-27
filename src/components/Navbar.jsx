@@ -67,7 +67,7 @@ function Navbar({ cartNumber }) {
         </Link>
           
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} style={{color:'#333'}} />
+        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} style={{color:'#fff'}} />
       </div>
       </div>
     </div>
