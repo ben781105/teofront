@@ -9,6 +9,7 @@
     width:100%;
     min-height: 100vh;
     padding-top: 4rem;
+    font-family:sans-serif;
   
 }
 
@@ -19,7 +20,7 @@
 .checkout-wrapper{
     display: flex;
     flex-wrap: wrap;
-    padding:15px;
+    padding:10px;
     flex:1;
     gap:30px;
     margin-top: 2.5rem;
