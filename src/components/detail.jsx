@@ -4,6 +4,7 @@ import api from '../api';
 import imageUrl from '../imageurl'
 import { Link } from 'react-router-dom';
 import '../styles/detail.css';
+import imageUrl from './imageurl';
 import { useNavigate } from 'react-router-dom';
 import Footer from './footer';
 import CakeDetailSkeleton from './detailskeleton';
@@ -84,7 +85,7 @@ const Detail = ({setCartnumber}) => {
                     {/* Product Main Section */}
                     <div className="cake-detail">
                         <div className="cake-image">
-                            <img src={`${imageUrl}${cakeDetail.image}`} alt={cakeDetail.name} loading='lazy'/>
+                            <img src={`${imageUrl}${cakeDetail.image}`} alt={cakeDetail.name} />
                         </div>
 
                         <div className="cake-info">
@@ -102,7 +103,7 @@ const Detail = ({setCartnumber}) => {
                             {similarCakes.map((cake) => (
                                 <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}>
                                     <div className="similar-cake-item">
-                                        <img src={`${imageUrl}${cake.image}`} alt={cake.name} loading='lazy'/>
+                                        <img src={`${imageUrl}${cake.image}`} alt={cake.name} loading='lazy' />
                                         <h3>{cake.name}</h3>
                                         <p>${cake.price}</p>
                                     </div>

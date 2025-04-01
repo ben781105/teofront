@@ -19,12 +19,10 @@
 .checkout-wrapper{
     display: flex;
     flex-wrap: wrap;
-    font-family: sans-serif;
-    padding-right: 3rem;
-    padding-left: 4rem;
+    padding:15px;
     flex:1;
-    gap:80px;
-    margin-top: 4rem;
+    gap:30px;
+    margin-top: 2.5rem;
     
 }
 .checkout-container{

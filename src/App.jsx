@@ -16,6 +16,8 @@ import Loginform from "./components/loginform";
 import ProtectedRoute from "./protectedroute";
 import { AuthProvider } from "./Context/authContext";
 import Profilepage from "./components/profilepage";
+import Paymentstatus from "./components/paymentstatus";
+
 function App() {
   const [cartNumber,setCartnumber] =useState(0)
   const cart_id = localStorage.getItem('cart_id')
@@ -52,6 +54,7 @@ return (
       <Route path='checkout/' element={<ProtectedRoute><Checkout/></ProtectedRoute>}/>
       <Route path='login/' element={<Loginform/>}/>
       <Route path='Account/' element={<ProtectedRoute><Profilepage></Profilepage></ProtectedRoute>}/>
+      <Route path='status/' element={<Paymentstatus setCartnumber={setCartnumber}/>}/>
     </Routes>
     
   </Router>

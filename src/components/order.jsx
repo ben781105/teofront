@@ -11,6 +11,7 @@ function Order({cartitems,cartTotal,tax}) {
         <div className="order-item">
             <div className="order-image">
                 <img src={`${imageUrl}${cartitem.cake.image}`} alt={cartitem.cake.name}/>
+                <img src={`${imageUrl}${cartitem.cake.image}`} alt={cartitem.cake.name}/>
             </div>
             <div className="order-details">
                 <h3>{cartitem.cake.name}</h3>

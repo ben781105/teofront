@@ -27,7 +27,7 @@
   }
   .menu .welcome{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     max-width: 80%;
     margin:0 auto;
@@ -106,7 +106,7 @@
   @media(max-width:768px){
     .menu .welcome{
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 400;
       max-width: 100%;
       margin:0 auto;

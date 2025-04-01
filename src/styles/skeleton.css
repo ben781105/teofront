@@ -1,9 +1,9 @@
 .skeleton-wrapper {
-  width: 100%;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
+  margin: 15px auto;
    overflow-x: hidden;
 }
 
@@ -12,12 +12,17 @@
   width: 100%;
   max-width: 93%;
   grid-template-columns: repeat(5, 1fr); 
+  width: 100%;
+  max-width: 93%;
+  grid-template-columns: repeat(5, 1fr); 
   gap: 25px;
   justify-content: center;
   margin-top: 20px;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 
 
 .skeleton-card {
@@ -85,6 +90,8 @@
     gap: 25px;
      padding-left: 3rem;
     padding-right: 3rem;
+     padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -100,6 +107,17 @@
     gap: 25px;
     
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+    gap: 25px;
+    
+    
   }
 }
+
 
