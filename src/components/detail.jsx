@@ -4,7 +4,6 @@ import api from '../api';
 import imageUrl from '../imageurl'
 import { Link } from 'react-router-dom';
 import '../styles/detail.css';
-import imageUrl from './imageurl';
 import { useNavigate } from 'react-router-dom';
 import Footer from './footer';
 import CakeDetailSkeleton from './detailskeleton';
