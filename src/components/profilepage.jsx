@@ -17,7 +17,7 @@ function Profilepage() {
        const response = await api.get('get_user_info')
        console.log(response.data)
        setUserinfo(response.data)
-       setOrders(response.data.ordered_cakes)
+       setOrders(response.data.orderedCakes)
        setLoading(false)
       }
       catch(error){
