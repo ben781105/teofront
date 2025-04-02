@@ -7,7 +7,7 @@ function Orderhistory() {
        
        <div className="history-wrapper">
        <div className="product-info">
-        <div className='order-image'><img src={`${imageUrl}${order.cake.image}`} alt="item image" /></div>
+        
            <h2>item name: Red Velvet </h2>
            <p>Order date: 01/April/2025</p>
            <p>Order ID: Wx5jvJKWHJyy </p>
