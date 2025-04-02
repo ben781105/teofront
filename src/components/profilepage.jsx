@@ -9,7 +9,7 @@ import Spinner from './spinner'
 function Profilepage() {
     const [userInfo, setUserinfo] = useState({})
     const [loading, setLoading] = useState(false)
-    const [orders,setOrders] = useState([])
+    //const [orders,setOrders] = useState([])
     useEffect(()=>{
       const getuserInfo =async()=>{
         setLoading(true)
@@ -17,7 +17,7 @@ function Profilepage() {
        const response = await api.get('get_user_info')
        console.log(response.data)
        setUserinfo(response.data)
-       setOrders(response.data.orderedCakes)
+      // setOrders(response.data.orderedCakes)
        setLoading(false)
       }
       catch(error){
@@ -37,7 +37,7 @@ function Profilepage() {
     <div className='profile-page'>
        <div className='profile-container'>
         <Userdetails userInfo={userInfo}/>
-        <Orderhistory orders={orders}/>
+        <Orderhistory />
       </div>
       <Footer/>
     </div>
