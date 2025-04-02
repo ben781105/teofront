@@ -5,7 +5,7 @@ function Orderhistory({orders}) {
     <div className="order-history-container">
         <h3>Order history</h3>
        {orders.map((order)=>
-       <div className="history-wrapper">
+       <div className="history-wrapper" key={order.id}>
        <div className="product-info">
         <div className='order-image'><img src={`${imageUrl}${order.cake.image}`} alt="item image" /></div>
            <h2>item name:  {order.cake.name}</h2>
