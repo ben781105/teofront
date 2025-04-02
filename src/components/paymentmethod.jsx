@@ -14,7 +14,7 @@ function Paymentmethod() {
             setVerifying(true);  
             
 
-            const response = await api.post('/initiate_paypal_payment/', { cart_id });
+            const response = await api.post('initiate_paypal_payment', { cart_id });
             console.log(response.data);
 
             if (response.data.approvalUrl) {
