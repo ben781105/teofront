@@ -14,7 +14,7 @@ function Blog() {
     const [loading,setLoading] = useState(false)
     activeCategory ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto'
     const fetchBlogPosts = async (category) => {
-        try{s
+        try{
         setLoading(true)
         const response = await api.get('/post/', {
             params: { category } 
