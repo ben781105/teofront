@@ -19,7 +19,7 @@ function Footer() {
         <a href="https://x.com" target="_blank" rel="noopener noreferrer"><FaXTwitter/></a>
         <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
       </div>
-      <p>&copy; {new Date().getFullYear()} TEO Cakes. All rights reserved.</p>
+      <p style={{color:'#666'}}>&copy; {new Date().getFullYear()} TEO Cakes. All rights reserved.</p>
     </footer>
   );
 }

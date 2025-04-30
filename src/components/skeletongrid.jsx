@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/skeleton.css"; // Import styles
+import "../styles/skeleton.css"; 
 
 const SkeletonGrid = () => {
   return (

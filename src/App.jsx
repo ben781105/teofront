@@ -17,6 +17,10 @@ import ProtectedRoute from "./protectedroute";
 import { AuthProvider } from "./Context/authContext";
 import Profilepage from "./components/profilepage";
 import Paymentstatus from "./components/paymentstatus";
+import Blog from "./components/blog";
+import Blogcontent from "./components/blogcontent";
+import Tags from "./components/tags";
+
 
 function App() {
   const [cartNumber,setCartnumber] =useState(0)
@@ -55,6 +59,9 @@ return (
       <Route path='login/' element={<Loginform/>}/>
       <Route path='Account/' element={<ProtectedRoute><Profilepage></Profilepage></ProtectedRoute>}/>
       <Route path='status/' element={<Paymentstatus setCartnumber={setCartnumber}/>}/>
+      <Route path='blog/' element={<Blog/>}/>
+      <Route path='content/:slug' element={<Blogcontent/>}/>
+      <Route path='tag/:tag' element={<Tags/>}/>
     </Routes>
     
   </Router>

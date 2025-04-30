@@ -31,7 +31,9 @@
   .footer-links a:hover {
     text-decoration: underline;
   }
-  
+  :root{
+    --secondary-color: #f88c91;
+}
   .socials {
     margin: 10px 0;
     display: flex;
@@ -46,6 +48,7 @@
   }
   
   .socials a:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
+    color: var(--secondary-color)
   }
   

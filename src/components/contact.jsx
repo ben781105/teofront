@@ -39,12 +39,13 @@ function Contact() {
     }
   
   return (
+    <>
     <div className='contact-page'>
       
-      <div className='intro'><h1>Contact</h1></div>
-       <div className='contact-main'>
+      <h1>Contact</h1>
+            <div className='contact-main'>
           <div className='user-info'>
-            <h2 style={{color:'orange'}}>Get in touch</h2>
+            <h2 style={{color:'#f88c91'}}>Get in touch</h2>
             <p>We would love to hear from you! Fill out the form below with your
                name, email, phone number, and message, and we will get
                 back to you as soon as possible."</p>
@@ -64,14 +65,14 @@ function Contact() {
         <div className='contact-details'>
           <div className='address-info'>
             <span>
-              <h3 style={{color:'orange'}}>Address info</h3>
-              <p>1905A, Entebbe Town<br></br>
+              <h3 style={{color:'#f88c91'}}>Address info</h3>
+              <p style={{fontWeight:400}}>1905A, Entebbe Town<br></br>
                 Katabi Busambaga<br></br>
                 Uganda</p>
             </span>
             <span>
-              <h3 style={{color:'orange'}}>Contact info</h3>
-              <p>(1-800-23-456-7890)<br></br>
+              <h3 style={{color:'#f88c91'}}>Contact info</h3>
+              <p style={{fontWeight:400}}>(1-800-23-456-7890)<br></br>
                 info@domain.com<br></br>
                 Teocakes@gmail.com</p>
             </span>
@@ -86,8 +87,10 @@ function Contact() {
           </div>
         </div>
        </div>
-       <Footer/>
+       
     </div>
+    <Footer/>
+    </>
   )
 }
 

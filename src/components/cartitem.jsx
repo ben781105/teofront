@@ -74,7 +74,7 @@ function CartItem({ cartitem, setCartTotal, cartitems, setCartnumber, setCartIte
                 <div className="cart-item">
                     <div className="cart-item-image">
                         <img src={`${imageUrl}${cartitem.cake.image}`} alt={cartitem.cake.name} />
-                        <img src={`${imageUrl}${cartitem.cake.image}`} alt={cartitem.cake.name} />
+                    
                     </div>
                     <div className="cart-item-details">
                         <h3>{cartitem.cake.name}</h3>
