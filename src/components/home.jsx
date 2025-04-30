@@ -34,7 +34,7 @@ function Home() {
 
     fetchCakes();
   }, []);
-console.log(randomCartId);
+
 
 
 useEffect(() => {
