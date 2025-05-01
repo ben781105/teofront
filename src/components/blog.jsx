@@ -16,7 +16,7 @@ function Blog() {
     const fetchBlogPosts = async (category) => {
         try{
         setLoading(true)
-        const response = await api.get('/post/', {
+        const response = await api.get('post', {
             params: { category } 
         });
         setLoading(false)
