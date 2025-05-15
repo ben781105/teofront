@@ -1,12 +1,62 @@
-# React + Vite
+# 📦 TEO CAKES SHOP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 
 
-Currently, two official plugins are available:
+## 📸 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 
+[Live Demo](https://cakeshop-wi4m.onrender.com)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📑 Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## 📖 About
+
+> This is a full-stack e-commerce app that allows users to browse products, manage a shopping cart, and securely checkout using PayPal or Paystack.The purpose of this project is to make my customers cakes shop more modern and increase the sales through increased user engagement.
+
+---
+
+## ✨ Features
+
+- 🔐 User authentication and registration
+- 🛍️ Add-to-cart and checkout functionality
+- 🧾 Order history and tracking
+- 📦 Product/category management
+
+---
+
+## 🛠️ Tech Stack( this is the frontend repo of the project)
+
+**Frontend:**  
+- React  
+- Tailwind CSS  
+
+**Backend:**  
+- Django REST Framework  
+- SQLite  
+
+**Other Tools:**  
+- PayPal / Paystack API  
+- Git & GitHub  
+- Render for deployment
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/ben781105/teofront.git
+cd teofront
