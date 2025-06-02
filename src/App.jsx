@@ -20,7 +20,7 @@ import Paymentstatus from "./components/paymentstatus";
 import Blog from "./components/blog";
 import Blogcontent from "./components/blogcontent";
 import Tags from "./components/tags";
-
+import api from "./api";
 
 function App() {
   const [cartNumber,setCartnumber] =useState(0)
@@ -40,7 +40,27 @@ function App() {
     }
    },[cart_id])
    
-  
+   const [cakes, setCakes] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+     // Fetching the cakes
+  useEffect(() => {
+    const fetchCakes = async () => {
+      try {
+        const response = await api.get("cakes/");
+        console.log("cakes Data:", response.data);
+        setCakes(response.data);
+      } catch (error) {
+        setError(error.message||"failed to fetch cakes");
+      }
+      finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCakes();
+  }, []);
 return (
   <AuthProvider>
  
@@ -50,7 +70,7 @@ return (
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="contact/" element={<Contact/>}/>
-      <Route path="menu/" element= {<Menu/>}/>
+      <Route path="menu/" element= {<Menu cakes={cakes} loading={loading} error={error}/>}/>
       <Route path="*" element={<NotFound/>}/>
       <Route path= "cake-detail/:slug" element={<Detail setCartnumber={setCartnumber}/>}/>
       <Route path="cart/" element={<Cart cartNumber={cartNumber} setCartnumber={setCartnumber}/>}/>

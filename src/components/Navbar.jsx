@@ -34,6 +34,11 @@ function Navbar({ cartNumber }) {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/menu" className={({ isActive }) => (isActive ? "active" : "notactive")}>
+            Shop
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "notactive")}>
             Blog
           </NavLink>

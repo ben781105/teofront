@@ -3,9 +3,11 @@ import SkeletonGrid from "./skeletongrid";
 import ErrorComponent from "./ErrorComponent"; // Import the error component
 import { Link } from "react-router-dom";
 import imageUrl from "../imageurl";
+import Footer from "./footer";
 function Menu({ cakes, loading, error }) {
   return (
-    <div className="menu" id="menu">
+    <>
+    <div className="menu">
       <h1>Our Menu</h1>
        <p className="welcome">Discover our delicious selection of handcrafted cakes, made with the finest ingredients. 
         Whether for a special occasion or a sweet treat, there is a perfect cake for everyone.</p>
@@ -25,6 +27,8 @@ function Menu({ cakes, loading, error }) {
         </div>
       )}
     </div>
+    <Footer/>
+    </>
   );
 }
 
