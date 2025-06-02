@@ -27,9 +27,9 @@ function Latest(){
   }, []);
   return(
     <section className="latest">
-      <h3>Our Latest Addition</h3>
+      <h3>LATEST ADDITION</h3>
       {error&&<p>{error}</p>}
-      <p>Our latest addition are fresh and available to you at affordable prices join the party and get one for your self</p>
+      <p>Explore our latest cake additions—freshly baked, beautifully crafted, and full of flavor. Perfect for any celebration or sweet moment</p>
     <div className="latest-grid">
           {latestCakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}>
@@ -37,7 +37,7 @@ function Latest(){
               <div className="menu-image">
                <img src={`${imageUrl}${cake.image}`} alt={cake.name}/>
               </div>
-              <h3 style={{textDecoration:'none',color:'inherit'}}>{cake.name}</h3>
+              <p style={{textDecoration:'none',color:'inherit',marginTop:'0.7rem'}}>{cake.name}</p>
               <p>${cake.price}</p>
               
             </div></Link>

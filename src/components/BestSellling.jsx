@@ -28,14 +28,14 @@ function Bestselling(){
   }, []);
     return(
          <section className="bestselling">
-      <h3>Our Best Seling Cakes</h3>
+      <h3 style={{textAlign:'center'}}>BEST SELLING CAKES</h3>
       {error && <p>{error}</p>}
-      <p style={{textAlign:'center'}}>look through our best selling cakes, you my find one that suits your ceremony</p>
+      <p style={{textAlign:'center'}}>These customer favorites have earned their place at the top! Tried, tested, and loved by many, our best-selling cakes are perfect picks for guaranteed delight.</p>
     <div className="sellingcakes">
           {sellingCakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}><div className="menu-item">
               <div className="menu-image"><img src={`${imageUrl}${cake.image}`} alt={cake.name}/></div>
-              <h3 style={{textDecoration:'none',color:'inherit'}}>{cake.name}</h3>
+              <p style={{textDecoration:'none',color:'inherit',marginTop:'0.7rem'}}>{cake.name}</p>
               <p>${cake.price}</p>
               
             </div></Link>

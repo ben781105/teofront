@@ -9,6 +9,15 @@
     align-items: center;
     margin-bottom: 2rem;
 }
+.homeblog h3{
+    font-family: 'Playball', cursive;
+    font-size: 2.5rem;
+
+}
+.homeblog p{
+    font-family: 'open sans';
+    max-width: 80%;
+}
 .homepost{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -24,6 +33,7 @@
     background-size: cover;
     color: #fff;
     background-repeat: no-repeat;
+    
 }
 .backdrop{
     display: flex;
@@ -36,12 +46,16 @@
     padding-right: 2rem;
     gap: 1rem;
     background-color: rgba(0,0,0,0.5);
+    font-family: 'open sans', sans-serif;
 }
+
 .homepost button{
     width: 9rem;
     height: 2.5rem;
     font-size: 18px;
-
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
 }
 @media(max-width:1024px){
     .homepost{
@@ -65,9 +79,13 @@
    .homeblog{
     margin-left: 0;
     max-width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
    }
+   .homeblog p{
+    font-family: 'open sans';
+    max-width: 100%;
+}
 }
 
 @media(max-width:480px){

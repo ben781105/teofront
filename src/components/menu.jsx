@@ -19,7 +19,7 @@ function Menu({ cakes, loading, error }) {
           {cakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}><div className="menu-item">
               <div className="menu-image"><img src={`${imageUrl}${cake.image}`} alt={cake.name}/></div>
-              <h3 style={{textDecoration:'none',color:'inherit'}}>{cake.name}</h3>
+              <p style={{textDecoration:'none',color:'inherit',marginTop:'0.7rem'}}>{cake.name}</p>
               <p>${cake.price}</p>
               
             </div></Link>

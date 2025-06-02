@@ -7,6 +7,15 @@
     margin-top: 2rem;
     
 }
+.bestselling h3{
+    font-family: 'Playball', cursive;
+    font-size: 2.5rem;
+   
+}
+.bestselling p{
+    font-family: 'open sans';
+    max-width: 80%;
+}
 .sellingcakes{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -34,13 +43,16 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     }
+    .bestselling p{
+    max-width: 100%;
+}
 }
 @media(max-width:480px){
     .sellingcakes{
         grid-template-columns: repeat(1,1fr);
     }
       .bestselling{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     }
 }

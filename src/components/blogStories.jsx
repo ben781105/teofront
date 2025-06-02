@@ -28,8 +28,8 @@ function BlogStories(){
   }, []);
   return(
     <section className="homeblog">
-      <h3>Our Latest Addition</h3>
-      <p style={{textAlign:'center'}}>Read throught our latest blogs with fascinating stories </p>
+      <h3 style={{textAlign:'center'}}>BLOG STORIES</h3>
+      <p style={{textAlign:'center'}}>Dive into our blog for a mix of baking tips, behind-the-scenes moments, and cake stories that inspire. There’s always something fresh from the oven to read</p>
       <p>{error}</p>
     <div className="homepost">
            {homeposts.map((post) => (

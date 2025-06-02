@@ -14,6 +14,9 @@
     color: var(--secondary-color);
     margin-bottom: 20px;
   }
+  .menu p{
+    font-family: 'open sans' ;
+  }
   .menu-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -29,7 +32,7 @@
     font-weight: 400;
     max-width: 80%;
     margin:0 auto;
-    font-family:sans-serif;
+    font-family: 'open sans' ;
   }
   
   .menu-item {
