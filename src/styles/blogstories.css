@@ -92,4 +92,9 @@
     .homepost{
         grid-template-columns: 1fr;
     }
+    homeblog h3{
+    font-family: 'Playball', cursive;
+    font-size: 1.5rem;
+
+}
 }
