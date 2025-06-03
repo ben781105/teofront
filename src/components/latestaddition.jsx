@@ -29,7 +29,7 @@ function Latest(){
     <section className="latest">
       <h3>LATEST ADDITION</h3>
       {error&&<p>{error}</p>}
-      <p>Explore our latest cake additions—freshly baked, beautifully crafted, and full of flavor. Perfect for any celebration or sweet moment</p>
+      <p>Explore our latest cake additions,freshly baked and Perfect for any celebration or sweet moment</p>
     <div className="latest-grid">
           {latestCakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}>
