@@ -45,6 +45,7 @@
     }
     .bestselling p{
     max-width: 100%;
+    font-size: 1rem;
 }
 }
 @media(max-width:480px){
