@@ -30,7 +30,7 @@ function Bestselling(){
          <section className="bestselling">
       <h3 style={{textAlign:'center'}}>BEST SELLING CAKES</h3>
       {error && <p>{error}</p>}
-      <p style={{textAlign:'center'}}>These customer favorites have earned their place at the top! Tried, tested, and loved by many, our best-selling cakes are perfect picks for guaranteed delight.</p>
+      <p style={{textAlign:'center'}}>These customer favorites have earned their place at the top.Tested and loved by many.</p>
     <div className="sellingcakes">
           {sellingCakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}><div className="menu-item">
