@@ -3,14 +3,17 @@ import api from "../api"
 import imageUrl from "../imageurl"
 import { Link } from "react-router-dom"
 import '../styles/bestselling.css'
-
+import Bestskeleton from "./bestskeleton"
+import '../styles/skeleton.css'
 function Bestselling(){
   const [sellingCakes,setsellingCakes] = useState([])
    const [ error,setError] = useState(null)
-   //const [ loading,setLoading] = useState()
+   const [ loading,setLoading] = useState()
 
    useEffect(() => {
     const fetchsellingCakes = async () => {
+      setLoading(true);
+      setError(null);
       try {
         const response = await api.get("bestselling");
         console.log("sellingcakes Data:", response.data);
@@ -20,7 +23,7 @@ function Bestselling(){
         setError(error.message||"failed to fetch cakes");
       }
       finally {
-     //   setLoading(false);
+        setLoading(false);
       }
     };
 
@@ -28,9 +31,10 @@ function Bestselling(){
   }, []);
     return(
          <section className="bestselling">
-      <h3 style={{textAlign:'center'}}>BEST SELLING CAKES</h3>
+      <h3 style={{textAlign:'center'}}>Best Sellers</h3>
       {error && <p>{error}</p>}
-      <p style={{textAlign:'center'}}>These customer favorites have earned their place at the top.Tested and loved by many.</p>
+      <p style={{textAlign:'center'}}>These customer favorites have earned their place at the top.Tested, and loved by many</p>
+      {loading?(<Bestskeleton/>):(
     <div className="sellingcakes">
           {sellingCakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}><div className="menu-item">
@@ -40,7 +44,7 @@ function Bestselling(){
               
             </div></Link>
           ))}
-        </div>
+        </div>)}
     </section>
     )
 }

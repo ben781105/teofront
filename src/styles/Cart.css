@@ -9,6 +9,7 @@
     width:100%;
     min-height: 100vh;
     padding-top: 4rem;
+    background-color: azure;
 }
 
 
@@ -30,7 +31,7 @@
     margin-bottom: 2rem;
 }
 .cart-page h1{
-    font-family: cursive;
+    font-family: playball;
     color: var(--secondary-color);
     font-size: 1.5rem;
      margin-top: 2rem;
@@ -46,6 +47,7 @@
         min-height: 100vh;
         padding:0;
         overflow-x: hidden
+
     }
     .cart-wrapper{
         display: flex;
@@ -53,7 +55,7 @@
         flex-wrap: wrap;
         gap:50px;
         flex-wrap: wrap;
-        padding: 20px;
+        padding: 20px 10px;
         align-items: center;
         justify-content: center;
     }
@@ -67,7 +69,8 @@
     .cartitems-container{
         flex:0.7;
         margin-top: 0;
-        margin-bottom: 0
+        margin-bottom: 0;
+        width:100%;
     }
     
 }

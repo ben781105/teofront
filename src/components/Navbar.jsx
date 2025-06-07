@@ -38,6 +38,11 @@ function Navbar({ cartNumber }) {
             Shop
           </NavLink>
         </li>
+          <li>
+          <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "notactive")}>
+            About
+          </NavLink>
+        </li>
         <li>
           <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "notactive")}>
             Blog
@@ -62,7 +67,7 @@ function Navbar({ cartNumber }) {
           </>
         ) : (
           <NavLink to="/login" className={({ isActive }) => (isActive ? "active" : "notactive")} id="auth-link" style={{color:'inherit'}}>
-            <FontAwesomeIcon icon={faUser}  style={{color:'inherit'}}/> Login
+            <FontAwesomeIcon icon={faUser}  style={{color:'inherit'}}/>
           </NavLink>
         )}
 

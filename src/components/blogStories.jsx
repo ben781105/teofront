@@ -3,14 +3,16 @@ import api from "../api"
 import { Link } from "react-router-dom"
 import '../styles/blogstories.css'
 import imageUrl from "../imageurl"
+import Blogskeleton from "./blogskeleton"
 //import {motion as Motion} from 'framer-motion'
 function BlogStories(){
    const [homeposts,setHomeposts] = useState([])
    const [ error,setError] = useState(null)
-   //const [ loading,setLoading] = useState()
+   const [ loading,setLoading] = useState()
 
    useEffect(() => {
     const fetchLatestCakes = async () => {
+      setLoading(true);
       try {
         const response = await api.get("homepost");
         console.log("homeposts Data:", response.data);
@@ -20,7 +22,7 @@ function BlogStories(){
         setError(error.message||"failed to fetch cakes");
       }
       finally {
-     //   setLoading(false);
+      setLoading(false);
       }
     };
 
@@ -28,9 +30,10 @@ function BlogStories(){
   }, []);
   return(
     <section className="homeblog">
-      <h3 style={{textAlign:'center'}}>BLOG STORIES</h3>
-      <p style={{textAlign:'center'}}>Dive into our blog for a mix of baking tips, behind-the-scenes moments, and cake stories that inspire.</p>
+      <h3 style={{textAlign:'center'}}>Latest Blog</h3>
+      <p style={{textAlign:'center'}}>Dive into our blog for a mix of baking tips, behind-the-scenes moments, and cake stories that inspire. There’s always something fresh from the oven to read</p>
       <p>{error}</p>
+      {loading?(<Blogskeleton/>):(
     <div className="homepost">
            {homeposts.map((post) => (
                     <article key={post.id}
@@ -45,7 +48,7 @@ function BlogStories(){
                     </article>
                     
                 ))}
-    </div>
+    </div>)}
     </section>
   )
 }

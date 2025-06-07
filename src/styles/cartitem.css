@@ -155,6 +155,14 @@
       padding: 7px;
       gap:20px;
     }
+    .cart-summary{
+      max-width:100%;
+    }
+  }
+  @media(max-width:768px){
+     .cart-summary{
+      max-width:100%;
+    }
   }
   
   

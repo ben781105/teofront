@@ -3,14 +3,17 @@ import api from "../api"
 import imageUrl from "../imageurl"
 import { Link } from "react-router-dom"
 import '../styles/latest.css'
+import Homeskeleton from "./homeskeleton"
+
 function Latest(){
    const [latestCakes,setLatestCakes] = useState([])
    const [ error,setError] = useState(null)
-   //const [ loading,setLoading] = useState()
+   const [ loading,setLoading] = useState(false)
 
    useEffect(() => {
     const fetchLatestCakes = async () => {
       try {
+        setLoading(true)
         const response = await api.get("latest");
         console.log("latestcakes Data:", response.data);
         setLatestCakes(response.data);
@@ -19,7 +22,7 @@ function Latest(){
         setError(error.message||"failed to fetch cakes");
       }
       finally {
-     //   setLoading(false);
+        setLoading(false);
       }
     };
 
@@ -27,9 +30,10 @@ function Latest(){
   }, []);
   return(
     <section className="latest">
-      <h3>LATEST ADDITION</h3>
+      <h3>Latest Addition</h3>
       {error&&<p>{error}</p>}
-      <p>Explore our latest cake additions,freshly baked and Perfect for any celebration or sweet moment</p>
+      <p>Explore our latest cake additions—freshly baked, beautifully crafted, and full of flavor. Perfect for any celebration or sweet moment</p>
+    {loading?(<Homeskeleton/>):(
     <div className="latest-grid">
           {latestCakes.map((cake) => (
             <Link to={`/cake-detail/${cake.slug}`} key={cake.id} style={{color:'inherit'}}>
@@ -42,7 +46,7 @@ function Latest(){
               
             </div></Link>
           ))}
-        </div>
+        </div>)}
     </section>
   )
 }

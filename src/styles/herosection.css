@@ -8,19 +8,33 @@
     
 }
 .herosection{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    background-color: azure;
+}
+.hero-text{
+     display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    width:100%;
     flex-direction: column;
-    gap:20px;
-    background-image: url('herocake.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
+    color: white;
+}
+.hero-text p{
+    color: black;
+    margin-top: 1rem;
+    font-family: 'open sans';
+}
+.hero-text h1{
+         font-weight: 300;
+    }
+.img{
+    width: 40rem;
 }
 :root{
     --secondary-color: #f88c91;
@@ -29,28 +43,45 @@
     width: 160px;
     height: 45px;
     font-size: 17px;
+    margin-top: 2rem;
     cursor: pointer;
     border: none;
     color: white;
     background-color: var(--secondary-color);
-
+    border-radius: 5px;
 }
 .herosection button a{
 color: inherit;
 text-decoration: none;
 }
 .herosection h1{
-    text-align: center;
-    color: white;
-    font-size: 3em;
+    font-size: 2.5em;
+    color: black;
+    max-width:80%;
+    line-height: 3rem;
+    font-family: playball;
+    color: var(--secondary-color);
 }
-@media(max-width:768px){
-    .herosection h1{
-        font-size: 2em;
-    }
-}
+
 @media(max-width:768px){
     .herosection h1{
         font-size: 1.9em;
+    }
+    .herosection{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:1rem;
+        padding-top: 7rem;
+    }
+    .hero-text{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .img{
+        margin-top: 2rem;
+        width:20rem;
     }
 }

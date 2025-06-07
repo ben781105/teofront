@@ -22,6 +22,7 @@ import Blogcontent from "./components/blogcontent";
 import Tags from "./components/tags";
 import api from "./api";
 
+
 function App() {
   const [cartNumber,setCartnumber] =useState(0)
   const cart_id = localStorage.getItem('cart_id')
