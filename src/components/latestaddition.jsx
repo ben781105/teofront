@@ -31,8 +31,9 @@ function Latest(){
   return(
     <section className="latest">
       <h3>Latest Addition</h3>
-      {error&&<p>{error}</p>}
-      <p>Explore our latest cake additions—freshly baked, beautifully crafted, and full of flavor. Perfect for any celebration or sweet moment</p>
+      <p>Explore our latest cake additions beautifully crafted. Perfect for any celebration or sweet moment</p>
+       {error&&<p style={{color:'red'}}>{error}</p>}
+       {error&&<Homeskeleton/>}
     {loading?(<Homeskeleton/>):(
     <div className="latest-grid">
           {latestCakes.map((cake) => (

@@ -24,7 +24,6 @@
 .skeleton-text {
   height: 18px;
   background-color: #bcbcbc;
-  border-radius: 4px;
   animation: pulse 1.5s infinite ease-in-out;
 }
 

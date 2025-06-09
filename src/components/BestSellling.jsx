@@ -32,8 +32,10 @@ function Bestselling(){
     return(
          <section className="bestselling">
       <h3 style={{textAlign:'center'}}>Best Sellers</h3>
-      {error && <p>{error}</p>}
+      
       <p style={{textAlign:'center'}}>These customer favorites have earned their place at the top.Tested, and loved by many</p>
+      {error&&<p style={{color:'red'}}>{error}</p>}
+      {error&&<Bestskeleton/>}
       {loading?(<Bestskeleton/>):(
     <div className="sellingcakes">
           {sellingCakes.map((cake) => (

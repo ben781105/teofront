@@ -32,7 +32,8 @@ function BlogStories(){
     <section className="homeblog">
       <h3 style={{textAlign:'center'}}>Latest Blog</h3>
       <p style={{textAlign:'center'}}>Dive into our blog for a mix of baking tips, behind-the-scenes moments, and cake stories that inspire. There’s always something fresh from the oven to read</p>
-      <p>{error}</p>
+      <p style={{color:'red'}}>{error}</p>
+      {error&&<Blogskeleton/>}
       {loading?(<Blogskeleton/>):(
     <div className="homepost">
            {homeposts.map((post) => (
